@@ -19,6 +19,9 @@ namespace MediatRSample.Controllers
         //Assim estou utilizando uma classe mediadora para isso
 
 
+        //Toda vez que os endpoints forem chamados, o console vai logar cada passo !!
+
+
         private readonly IRepository<Pessoa> _repo;
         private readonly IMediator _mediat;
 
