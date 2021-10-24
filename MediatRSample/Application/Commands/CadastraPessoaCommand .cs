@@ -23,7 +23,10 @@ namespace MediatRSample.Application.Commands
     //deve ser invocado quando uma solicitação for gerada.
 
 
-    public class CadastraPessoaCommand : IRequest<string>  //IRequest é uma interface do MediatR
+    public class CadastraPessoaCommand : IRequest<string>   //IRequest é uma interface do MediatR.
+                                                            //Quando for cadastrado, quero 
+                                                            //retornar uma mensagem de sucesso(string). 
+                                                            //Poderia ser um UsuarioResponse DTO.
     {
         public string Nome { get; set; }
         public int Idade { get; set; }
